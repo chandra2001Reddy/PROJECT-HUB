@@ -1,0 +1,146 @@
+<html>
+<head>
+<title> MAJOR Project Form</title>
+<style>
+h3{
+    font-size:45px;
+    color:rgb(234, 18, 119);
+}
+.center{
+  background-color: rgb(180, 242, 79);
+}
+    
+.box-form {
+  margin: 6%6cm auto;
+  width: 70%;
+  margin-top: 10px;
+  box-sizing: content-box;
+}
+
+@media (max-width: 980px) {
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: stretch;
+  }
+}
+.box-form div {
+  height: auto;
+  border-radius: 30px;
+}
+
+.box-form .center {
+  padding: 1px;
+  overflow: hidden;
+  
+}
+@media (max-width: 980px) {
+  .box-form .center {
+    width: 100%;
+    
+  }
+}
+.box-form .center h5 {
+  font-size: 6vmax;
+  line-height: 0;
+}
+.box-form .center p {
+  font-size: 14px;
+  color: #dce0ea;
+}
+.box-form .center .inputs {
+  overflow: hidden;
+}
+.box-form .center input {
+  width: 130%;
+  padding: 18px;
+  margin-top: 10px;
+  font-size: 15px;
+  border: coral;
+  outline= none;
+  border-bottom: 2px solid #B0B3B9;
+  border-radius: 10px;
+  
+}
+.box-form .center button {
+  float : center;
+  color: #fff;
+  font-size: 16px;
+  padding: 2%;
+  border-radius: 10px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 3px 6px 1px #042d4657;
+  background: #3b5998;
+}    
+</style>
+</head>
+    <div class="box-form">
+	<div class="center">
+        <body align="center">
+        <h3>Project Upload Form</h3>
+
+        <form name="RegForm" method="post" action="major_table.php">
+        <table align="center" cellpadding="10">
+
+        <tr>
+        <td><label style="font-size:20px;">Id</label></td>
+        <td><input type="text" name="project_id" placeholder="PROJECT ID" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Year</label></td>
+        <td><input type="number" name="year" placeholder="YEAR" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Project Type</label></td>
+        <td><input type="text" name="project_type" placeholder="PROJECT TYPE" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Project Title</label></td>
+        <td><input type="text" name="project_title" placeholder="PROJECT TITLE" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Project Description</label></td>
+        <td><input type="text" name="project_description" placeholder="DESCRIPTION" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Project Members</label></td>
+        <td><input type="text" name="project_members" placeholder="MEMBERS" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Team Leader Email id</label></td>
+        <td><input type="text" name="email_id" placeholder="E-MAIL" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Project Guide</label></td>
+        <td><input type="text" name="project_guide" placeholder="GUIDE NAME" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">Guide Email</label></td>
+        <td><input type="text" name="guide_mail" placeholder="GUIDE E-MAIL" style="border:2px solid black;"/></td>
+        </tr>
+
+        <tr>
+        <td><label style="font-size:20px;">project file</label></td>
+        <td><input type="file" name="project_file" placeholder="PROJECT FILE" style="border:2px solid black;"/></td>
+        </tr>
+
+    </div>
+    </div>
+
+</table>
+<br><br><br>
+<button class="SUBMIT">SUBMIT</button><br><br><br><br><br><br>
+</form>
+</body>
+</html>
